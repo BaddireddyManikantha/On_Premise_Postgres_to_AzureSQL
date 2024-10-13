@@ -1,0 +1,19 @@
+{
+	"name": "PostgreSqlConfigTablesDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "OnPremisePostgreSqlLS",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Retail"
+		},
+		"annotations": [],
+		"type": "PostgreSqlV2Table",
+		"schema": [],
+		"typeProperties": {
+			"schema": "public",
+			"table": "retail_config"
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"name": "StaggingAvroDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorageLS",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Retail"
+		},
+		"annotations": [],
+		"type": "Avro",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": {
+					"value": "@utcNow('yyyy-MM-dd')",
+					"type": "Expression"
+				},
+				"fileSystem": "stagging"
+			}
+		},
+		"schema": []
+	}
+}

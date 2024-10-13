@@ -1,0 +1,15 @@
+{
+	"name": "PostgreSqlTables",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "OnPremisePostgreSqlLS",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Retail"
+		},
+		"annotations": [],
+		"type": "PostgreSqlV2Table",
+		"schema": []
+	}
+}
