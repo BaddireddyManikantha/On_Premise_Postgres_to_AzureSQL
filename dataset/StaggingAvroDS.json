@@ -5,6 +5,14 @@
 			"referenceName": "AzureDataLakeStorageLS",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"schema_name": {
+				"type": "String"
+			},
+			"table_name": {
+				"type": "String"
+			}
+		},
 		"folder": {
 			"name": "Retail"
 		},
@@ -13,8 +21,12 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().table_name",
+					"type": "Expression"
+				},
 				"folderPath": {
-					"value": "@utcNow('yyyy-MM-dd')",
+					"value": "@concat(utcNow('yyyy-MM-dd'),'/',dataset().schema_name)",
 					"type": "Expression"
 				},
 				"fileSystem": "stagging"
