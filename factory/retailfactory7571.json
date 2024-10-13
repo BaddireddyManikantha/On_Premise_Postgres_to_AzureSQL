@@ -1,0 +1,9 @@
+{
+	"name": "retailfactory7571",
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4e55bca7-e53a-460e-ac63-be9af4fb2693",
+		"tenantId": "7016ddf1-3b4e-49ba-ac65-7f43294f82f5"
+	}
+}
