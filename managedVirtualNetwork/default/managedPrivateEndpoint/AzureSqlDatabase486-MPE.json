@@ -1,0 +1,7 @@
+{
+	"name": "AzureSqlDatabase486-MPE",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/c22cded0-6ba7-4ccd-9764-eba3c40243f7/resourceGroups/retail/providers/Microsoft.Sql/servers/retail7571",
+		"groupId": "sqlServer"
+	}
+}
