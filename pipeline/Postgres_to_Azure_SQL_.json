@@ -260,6 +260,7 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
@@ -351,6 +352,29 @@
 							]
 						}
 					]
+				}
+			},
+			{
+				"name": "copy from bussiness to azure db",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "loopeveryfile",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "bussiness to azure db",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": false
 				}
 			}
 		],
