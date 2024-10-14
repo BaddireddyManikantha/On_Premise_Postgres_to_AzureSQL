@@ -1,5 +1,5 @@
 {
-	"name": "Parquet1",
+	"name": "ParquetDSForGet_metadata",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorageLS",
