@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "Parquet1",
+						"referenceName": "ParquetDSForGet_metadata",
 						"type": "DatasetReference"
 					},
 					"fieldList": [
@@ -45,7 +45,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Get Metadata1').output.childItems.name",
+						"value": "@activity('Get Metadata1').output.childItems",
 						"type": "Expression"
 					},
 					"isSequential": true,
@@ -91,7 +91,7 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "Parquet2",
+									"referenceName": "ParquetForPointertoBusiness",
 									"type": "DatasetReference",
 									"parameters": {
 										"file_name": {
