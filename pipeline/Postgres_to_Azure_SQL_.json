@@ -329,13 +329,7 @@
 							"inputs": [
 								{
 									"referenceName": "ParquetForPointertoBusiness",
-									"type": "DatasetReference",
-									"parameters": {
-										"file_name": {
-											"value": "@item().name",
-											"type": "Expression"
-										}
-									}
+									"type": "DatasetReference"
 								}
 							],
 							"outputs": [
